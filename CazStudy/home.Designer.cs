@@ -33,14 +33,14 @@ namespace CazStudy
         private void InitializeComponent()
         {
             this.visitnum = new System.Windows.Forms.Label();
-            this.vnumtxt = new System.Windows.Forms.TextBox();
-            this.vdatetxt = new System.Windows.Forms.TextBox();
+            this.Q11 = new System.Windows.Forms.TextBox();
+            this.Q12 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.pidtxt = new System.Windows.Forms.TextBox();
+            this.Q15 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.pnametxt = new System.Windows.Forms.TextBox();
+            this.txtinterviewer = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.agetxt = new System.Windows.Forms.TextBox();
+            this.txtcrfdate = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.save = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -48,20 +48,143 @@ namespace CazStudy
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Q13 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.Q14 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.Q16 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.Q17 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Q21 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.Q22210 = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.Q2229 = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.Q2228 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.Q2227 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.Q2226 = new System.Windows.Forms.TextBox();
+            this.label19 = new System.Windows.Forms.Label();
+            this.Q2225 = new System.Windows.Forms.TextBox();
+            this.label20 = new System.Windows.Forms.Label();
+            this.Q2224 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.Q2223 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.Q2222 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.Q2221 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Q2216 = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
+            this.Q2215 = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.Q2214 = new System.Windows.Forms.TextBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.Q2213 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.Q2212 = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.Q2211 = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.Q2311 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.Q2310 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.Q239 = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.Q237 = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.Q236 = new System.Windows.Forms.TextBox();
+            this.label32 = new System.Windows.Forms.Label();
+            this.Q235 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.Q234 = new System.Windows.Forms.TextBox();
+            this.label34 = new System.Windows.Forms.Label();
+            this.Q233 = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.Q232 = new System.Windows.Forms.TextBox();
+            this.label36 = new System.Windows.Forms.Label();
+            this.Q231 = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.Q238 = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
+            this.Q2312 = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.Q2313 = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.Q2314 = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.Q2511 = new System.Windows.Forms.TextBox();
+            this.label42 = new System.Windows.Forms.Label();
+            this.Q2510 = new System.Windows.Forms.TextBox();
+            this.label43 = new System.Windows.Forms.Label();
+            this.Q259 = new System.Windows.Forms.TextBox();
+            this.label44 = new System.Windows.Forms.Label();
+            this.Q258 = new System.Windows.Forms.TextBox();
+            this.label46 = new System.Windows.Forms.Label();
+            this.Q257 = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.Q256 = new System.Windows.Forms.TextBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.Q255 = new System.Windows.Forms.TextBox();
+            this.label51 = new System.Windows.Forms.Label();
+            this.Q254 = new System.Windows.Forms.TextBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.Q253 = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.Q252 = new System.Windows.Forms.TextBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.Q251 = new System.Windows.Forms.TextBox();
+            this.label55 = new System.Windows.Forms.Label();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
+            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.Q26 = new System.Windows.Forms.TextBox();
+            this.label48 = new System.Windows.Forms.Label();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.Q3 = new System.Windows.Forms.TextBox();
+            this.label45 = new System.Windows.Forms.Label();
+            this.Q242 = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.Q241 = new System.Windows.Forms.TextBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.Q4 = new System.Windows.Forms.TextBox();
+            this.label49 = new System.Windows.Forms.Label();
+            this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.Q52 = new System.Windows.Forms.TextBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.Q51 = new System.Windows.Forms.TextBox();
+            this.label59 = new System.Windows.Forms.Label();
+            this.Q53 = new System.Windows.Forms.TextBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.btnexit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            this.groupBox7.SuspendLayout();
+            this.groupBox9.SuspendLayout();
+            this.groupBox10.SuspendLayout();
+            this.groupBox11.SuspendLayout();
+            this.groupBox12.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            this.groupBox13.SuspendLayout();
             this.SuspendLayout();
             // 
             // visitnum
@@ -73,24 +196,24 @@ namespace CazStudy
             this.visitnum.TabIndex = 0;
             this.visitnum.Text = "1.1 Visit :";
             // 
-            // vnumtxt
+            // Q11
             // 
-            this.vnumtxt.Location = new System.Drawing.Point(223, 91);
-            this.vnumtxt.Name = "vnumtxt";
-            this.vnumtxt.Size = new System.Drawing.Size(36, 20);
-            this.vnumtxt.TabIndex = 1;
-            this.vnumtxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.vnumtxt_KeyPress);
-            this.vnumtxt.Leave += new System.EventHandler(this.vnumtxt_Leave);
+            this.Q11.Location = new System.Drawing.Point(223, 91);
+            this.Q11.Name = "Q11";
+            this.Q11.Size = new System.Drawing.Size(36, 20);
+            this.Q11.TabIndex = 1;
+            this.Q11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.vnumtxt_KeyPress);
+            this.Q11.Leave += new System.EventHandler(this.vnumtxt_Leave);
             // 
-            // vdatetxt
+            // Q12
             // 
-            this.vdatetxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vdatetxt.Location = new System.Drawing.Point(339, 91);
-            this.vdatetxt.Name = "vdatetxt";
-            this.vdatetxt.Size = new System.Drawing.Size(85, 21);
-            this.vdatetxt.TabIndex = 20;
-            this.vdatetxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.vdatetxt_KeyPress);
-            this.vdatetxt.Leave += new System.EventHandler(this.vdatetxt_Leave);
+            this.Q12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Q12.Location = new System.Drawing.Point(339, 91);
+            this.Q12.Name = "Q12";
+            this.Q12.Size = new System.Drawing.Size(85, 21);
+            this.Q12.TabIndex = 20;
+            this.Q12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.vdatetxt_KeyPress);
+            this.Q12.Leave += new System.EventHandler(this.vdatetxt_Leave);
             // 
             // label1
             // 
@@ -101,12 +224,12 @@ namespace CazStudy
             this.label1.TabIndex = 2;
             this.label1.Text = "1.2 Visit Date :";
             // 
-            // pidtxt
+            // Q15
             // 
-            this.pidtxt.Location = new System.Drawing.Point(52, 90);
-            this.pidtxt.Name = "pidtxt";
-            this.pidtxt.Size = new System.Drawing.Size(117, 20);
-            this.pidtxt.TabIndex = 5;
+            this.Q15.Location = new System.Drawing.Point(52, 90);
+            this.Q15.Name = "Q15";
+            this.Q15.Size = new System.Drawing.Size(117, 20);
+            this.Q15.TabIndex = 5;
             // 
             // label2
             // 
@@ -117,41 +240,41 @@ namespace CazStudy
             this.label2.TabIndex = 4;
             this.label2.Text = "1.5 PID :";
             // 
-            // pnametxt
+            // txtinterviewer
             // 
-            this.pnametxt.Location = new System.Drawing.Point(461, 712);
-            this.pnametxt.Name = "pnametxt";
-            this.pnametxt.Size = new System.Drawing.Size(218, 20);
-            this.pnametxt.TabIndex = 7;
+            this.txtinterviewer.Location = new System.Drawing.Point(8, 714);
+            this.txtinterviewer.Name = "txtinterviewer";
+            this.txtinterviewer.Size = new System.Drawing.Size(218, 20);
+            this.txtinterviewer.TabIndex = 7;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(413, 715);
+            this.label3.Location = new System.Drawing.Point(9, 699);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.Size = new System.Drawing.Size(141, 13);
             this.label3.TabIndex = 6;
-            this.label3.Text = "Name :";
+            this.label3.Text = "সাক্ষাৎকার গ্রহন কারীর নাম";
             // 
-            // agetxt
+            // txtcrfdate
             // 
-            this.agetxt.Location = new System.Drawing.Point(744, 712);
-            this.agetxt.Name = "agetxt";
-            this.agetxt.Size = new System.Drawing.Size(49, 20);
-            this.agetxt.TabIndex = 9;
+            this.txtcrfdate.Location = new System.Drawing.Point(242, 714);
+            this.txtcrfdate.Name = "txtcrfdate";
+            this.txtcrfdate.Size = new System.Drawing.Size(116, 20);
+            this.txtcrfdate.TabIndex = 9;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(709, 715);
+            this.label4.Location = new System.Drawing.Point(245, 699);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.Size = new System.Drawing.Size(36, 13);
             this.label4.TabIndex = 8;
-            this.label4.Text = "Age :";
+            this.label4.Text = "তারিখ";
             // 
             // save
             // 
-            this.save.Location = new System.Drawing.Point(817, 715);
+            this.save.Location = new System.Drawing.Point(817, 560);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(75, 23);
             this.save.TabIndex = 10;
@@ -202,19 +325,19 @@ namespace CazStudy
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(270, 5);
+            this.label6.Location = new System.Drawing.Point(395, 5);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(154, 13);
             this.label6.TabIndex = 24;
             this.label6.Text = "All Copyright @ERI,IDD,icddr,b";
             // 
-            // textBox1
+            // Q13
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(503, 91);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(85, 21);
-            this.textBox1.TabIndex = 25;
+            this.Q13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Q13.Location = new System.Drawing.Point(503, 91);
+            this.Q13.Name = "Q13";
+            this.Q13.Size = new System.Drawing.Size(85, 21);
+            this.Q13.TabIndex = 25;
             // 
             // label7
             // 
@@ -225,13 +348,13 @@ namespace CazStudy
             this.label7.TabIndex = 24;
             this.label7.Text = "1.3 2nd Dose :";
             // 
-            // textBox2
+            // Q14
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(648, 91);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(146, 21);
-            this.textBox2.TabIndex = 27;
+            this.Q14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Q14.Location = new System.Drawing.Point(648, 91);
+            this.Q14.Name = "Q14";
+            this.Q14.Size = new System.Drawing.Size(146, 21);
+            this.Q14.TabIndex = 27;
             // 
             // label8
             // 
@@ -242,13 +365,13 @@ namespace CazStudy
             this.label8.TabIndex = 26;
             this.label8.Text = "1.4 NID :";
             // 
-            // textBox3
+            // Q16
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(67, 116);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(85, 21);
-            this.textBox3.TabIndex = 29;
+            this.Q16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Q16.Location = new System.Drawing.Point(67, 116);
+            this.Q16.Name = "Q16";
+            this.Q16.Size = new System.Drawing.Size(85, 21);
+            this.Q16.TabIndex = 29;
             // 
             // label9
             // 
@@ -259,13 +382,13 @@ namespace CazStudy
             this.label9.TabIndex = 28;
             this.label9.Text = "1.6 1st BT :";
             // 
-            // textBox4
+            // Q17
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(264, 117);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(160, 21);
-            this.textBox4.TabIndex = 31;
+            this.Q17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Q17.Location = new System.Drawing.Point(264, 117);
+            this.Q17.Name = "Q17";
+            this.Q17.Size = new System.Drawing.Size(160, 21);
+            this.Q17.TabIndex = 31;
             // 
             // label10
             // 
@@ -276,13 +399,13 @@ namespace CazStudy
             this.label10.TabIndex = 30;
             this.label10.Text = "1.7 Vac Reg Num :";
             // 
-            // textBox5
+            // Q21
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(509, 118);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(85, 21);
-            this.textBox5.TabIndex = 33;
+            this.Q21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Q21.Location = new System.Drawing.Point(509, 118);
+            this.Q21.Name = "Q21";
+            this.Q21.Size = new System.Drawing.Size(85, 21);
+            this.Q21.TabIndex = 33;
             // 
             // label11
             // 
@@ -293,22 +416,1030 @@ namespace CazStudy
             this.label11.TabIndex = 32;
             this.label11.Text = "2.1 Vac Name :";
             // 
-            // textBox6
+            // label13
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(672, 118);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(85, 21);
-            this.textBox6.TabIndex = 35;
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(6, 16);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(31, 13);
+            this.label13.TabIndex = 36;
+            this.label13.Text = "ব্যাথা";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.groupBox3);
+            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Location = new System.Drawing.Point(6, 152);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(410, 275);
+            this.groupBox1.TabIndex = 37;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "2.2 ভ্যাকসিন নেওয়ার পর কি কি উপসর্গ দেখা গেছে?";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.Q22210);
+            this.groupBox3.Controls.Add(this.label28);
+            this.groupBox3.Controls.Add(this.Q2229);
+            this.groupBox3.Controls.Add(this.label27);
+            this.groupBox3.Controls.Add(this.Q2228);
+            this.groupBox3.Controls.Add(this.label26);
+            this.groupBox3.Controls.Add(this.Q2227);
+            this.groupBox3.Controls.Add(this.label25);
+            this.groupBox3.Controls.Add(this.Q2226);
+            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Controls.Add(this.Q2225);
+            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.Q2224);
+            this.groupBox3.Controls.Add(this.label21);
+            this.groupBox3.Controls.Add(this.Q2223);
+            this.groupBox3.Controls.Add(this.label22);
+            this.groupBox3.Controls.Add(this.Q2222);
+            this.groupBox3.Controls.Add(this.label23);
+            this.groupBox3.Controls.Add(this.Q2221);
+            this.groupBox3.Controls.Add(this.label24);
+            this.groupBox3.Location = new System.Drawing.Point(6, 120);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(398, 152);
+            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "খ";
+            // 
+            // Q22210
+            // 
+            this.Q22210.Location = new System.Drawing.Point(352, 117);
+            this.Q22210.Name = "Q22210";
+            this.Q22210.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.Q22210.Size = new System.Drawing.Size(40, 20);
+            this.Q22210.TabIndex = 55;
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Location = new System.Drawing.Point(206, 120);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(94, 13);
+            this.label28.TabIndex = 54;
+            this.label28.Text = "নির্দিস্ট করে লিখুন";
+            // 
+            // Q2229
+            // 
+            this.Q2229.Location = new System.Drawing.Point(352, 91);
+            this.Q2229.Name = "Q2229";
+            this.Q2229.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.Q2229.Size = new System.Drawing.Size(40, 20);
+            this.Q2229.TabIndex = 53;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Location = new System.Drawing.Point(206, 94);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(45, 13);
+            this.label27.TabIndex = 52;
+            this.label27.Text = "অন্যান্য";
+            // 
+            // Q2228
+            // 
+            this.Q2228.Location = new System.Drawing.Point(352, 65);
+            this.Q2228.Name = "Q2228";
+            this.Q2228.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.Q2228.Size = new System.Drawing.Size(40, 20);
+            this.Q2228.TabIndex = 51;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(206, 68);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(73, 13);
+            this.label26.TabIndex = 50;
+            this.label26.Text = "জয়েন্টে ব্যাথা";
+            // 
+            // Q2227
+            // 
+            this.Q2227.Location = new System.Drawing.Point(352, 39);
+            this.Q2227.Name = "Q2227";
+            this.Q2227.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.Q2227.Size = new System.Drawing.Size(40, 20);
+            this.Q2227.TabIndex = 49;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Location = new System.Drawing.Point(206, 42);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(140, 13);
+            this.label25.TabIndex = 48;
+            this.label25.Text = "অস্বাভাবিক মাংসপেশী ব্যাথা";
+            // 
+            // Q2226
+            // 
+            this.Q2226.Location = new System.Drawing.Point(352, 13);
+            this.Q2226.Name = "Q2226";
+            this.Q2226.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.Q2226.Size = new System.Drawing.Size(40, 20);
+            this.Q2226.TabIndex = 47;
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(206, 16);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(46, 13);
+            this.label19.TabIndex = 46;
+            this.label19.Text = "ডায়রিয়া";
+            // 
+            // Q2225
+            // 
+            this.Q2225.Location = new System.Drawing.Point(152, 117);
+            this.Q2225.Name = "Q2225";
+            this.Q2225.Size = new System.Drawing.Size(40, 20);
+            this.Q2225.TabIndex = 45;
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(6, 120);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(47, 13);
+            this.label20.TabIndex = 44;
+            this.label20.Text = "বমি ভাব";
+            // 
+            // Q2224
+            // 
+            this.Q2224.Location = new System.Drawing.Point(152, 91);
+            this.Q2224.Name = "Q2224";
+            this.Q2224.Size = new System.Drawing.Size(40, 20);
+            this.Q2224.TabIndex = 43;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Location = new System.Drawing.Point(6, 94);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(75, 13);
+            this.label21.TabIndex = 42;
+            this.label21.Text = "শীত বা কাঁপুনি";
+            // 
+            // Q2223
+            // 
+            this.Q2223.Location = new System.Drawing.Point(152, 65);
+            this.Q2223.Name = "Q2223";
+            this.Q2223.Size = new System.Drawing.Size(40, 20);
+            this.Q2223.TabIndex = 41;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Location = new System.Drawing.Point(6, 68);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(54, 13);
+            this.label22.TabIndex = 40;
+            this.label22.Text = "ক্লান্তি ভাব";
+            // 
+            // Q2222
+            // 
+            this.Q2222.Location = new System.Drawing.Point(152, 39);
+            this.Q2222.Name = "Q2222";
+            this.Q2222.Size = new System.Drawing.Size(40, 20);
+            this.Q2222.TabIndex = 39;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(6, 42);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(25, 13);
+            this.label23.TabIndex = 38;
+            this.label23.Text = "জ্বর";
+            // 
+            // Q2221
+            // 
+            this.Q2221.Location = new System.Drawing.Point(152, 13);
+            this.Q2221.Name = "Q2221";
+            this.Q2221.Size = new System.Drawing.Size(40, 20);
+            this.Q2221.TabIndex = 37;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(6, 16);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(55, 13);
+            this.label24.TabIndex = 36;
+            this.label24.Text = "মাথা ব্যাথা";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.Q2216);
+            this.groupBox2.Controls.Add(this.label18);
+            this.groupBox2.Controls.Add(this.Q2215);
+            this.groupBox2.Controls.Add(this.label17);
+            this.groupBox2.Controls.Add(this.Q2214);
+            this.groupBox2.Controls.Add(this.label16);
+            this.groupBox2.Controls.Add(this.Q2213);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.Q2212);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.Q2211);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Location = new System.Drawing.Point(6, 19);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(398, 99);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "ক";
+            // 
+            // Q2216
+            // 
+            this.Q2216.Location = new System.Drawing.Point(293, 65);
+            this.Q2216.Name = "Q2216";
+            this.Q2216.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.Q2216.Size = new System.Drawing.Size(93, 20);
+            this.Q2216.TabIndex = 47;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(200, 68);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(94, 13);
+            this.label18.TabIndex = 46;
+            this.label18.Text = "নির্দিস্ট করে লিখুন";
+            // 
+            // Q2215
+            // 
+            this.Q2215.Location = new System.Drawing.Point(346, 39);
+            this.Q2215.Name = "Q2215";
+            this.Q2215.Size = new System.Drawing.Size(40, 20);
+            this.Q2215.TabIndex = 45;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(200, 42);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(45, 13);
+            this.label17.TabIndex = 44;
+            this.label17.Text = "অন্যান্য";
+            // 
+            // Q2214
+            // 
+            this.Q2214.Location = new System.Drawing.Point(346, 13);
+            this.Q2214.Name = "Q2214";
+            this.Q2214.Size = new System.Drawing.Size(40, 20);
+            this.Q2214.TabIndex = 43;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(200, 16);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(61, 13);
+            this.label16.TabIndex = 42;
+            this.label16.Text = "ফুলে যাওয়া";
+            // 
+            // Q2213
+            // 
+            this.Q2213.Location = new System.Drawing.Point(152, 65);
+            this.Q2213.Name = "Q2213";
+            this.Q2213.Size = new System.Drawing.Size(40, 20);
+            this.Q2213.TabIndex = 41;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(6, 68);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(51, 13);
+            this.label15.TabIndex = 40;
+            this.label15.Text = "চুলকানো";
+            // 
+            // Q2212
+            // 
+            this.Q2212.Location = new System.Drawing.Point(152, 39);
+            this.Q2212.Name = "Q2212";
+            this.Q2212.Size = new System.Drawing.Size(40, 20);
+            this.Q2212.TabIndex = 39;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(6, 42);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(138, 13);
+            this.label14.TabIndex = 38;
+            this.label14.Text = "ভ্যাকসিনের স্থানে লাল ভাব ";
+            // 
+            // Q2211
+            // 
+            this.Q2211.Location = new System.Drawing.Point(152, 13);
+            this.Q2211.Name = "Q2211";
+            this.Q2211.Size = new System.Drawing.Size(40, 20);
+            this.Q2211.TabIndex = 37;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.groupBox5);
+            this.groupBox4.Location = new System.Drawing.Point(425, 152);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(411, 245);
+            this.groupBox4.TabIndex = 38;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "2.3 পুর্বের ভিজিট থেকে এবারের ভিজিট পর্যন্ত নিন্মের কোন উপসর্গ/নতুন রোগ নির্নয় হয়" +
+    "েছে কিনা?";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.Q2314);
+            this.groupBox5.Controls.Add(this.label41);
+            this.groupBox5.Controls.Add(this.Q2313);
+            this.groupBox5.Controls.Add(this.label40);
+            this.groupBox5.Controls.Add(this.Q2312);
+            this.groupBox5.Controls.Add(this.label39);
+            this.groupBox5.Controls.Add(this.Q238);
+            this.groupBox5.Controls.Add(this.label38);
+            this.groupBox5.Controls.Add(this.Q2311);
+            this.groupBox5.Controls.Add(this.label12);
+            this.groupBox5.Controls.Add(this.Q2310);
+            this.groupBox5.Controls.Add(this.label29);
+            this.groupBox5.Controls.Add(this.Q239);
+            this.groupBox5.Controls.Add(this.label30);
+            this.groupBox5.Controls.Add(this.Q237);
+            this.groupBox5.Controls.Add(this.label31);
+            this.groupBox5.Controls.Add(this.Q236);
+            this.groupBox5.Controls.Add(this.label32);
+            this.groupBox5.Controls.Add(this.Q235);
+            this.groupBox5.Controls.Add(this.label33);
+            this.groupBox5.Controls.Add(this.Q234);
+            this.groupBox5.Controls.Add(this.label34);
+            this.groupBox5.Controls.Add(this.Q233);
+            this.groupBox5.Controls.Add(this.label35);
+            this.groupBox5.Controls.Add(this.Q232);
+            this.groupBox5.Controls.Add(this.label36);
+            this.groupBox5.Controls.Add(this.Q231);
+            this.groupBox5.Controls.Add(this.label37);
+            this.groupBox5.Location = new System.Drawing.Point(9, 32);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(395, 206);
+            this.groupBox5.TabIndex = 1;
+            this.groupBox5.TabStop = false;
+            // 
+            // Q2311
+            // 
+            this.Q2311.Location = new System.Drawing.Point(348, 91);
+            this.Q2311.Name = "Q2311";
+            this.Q2311.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.Q2311.Size = new System.Drawing.Size(40, 20);
+            this.Q2311.TabIndex = 55;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(597, 122);
+            this.label12.Location = new System.Drawing.Point(202, 94);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(76, 13);
-            this.label12.TabIndex = 34;
-            this.label12.Text = "2.2 Visit Date :";
+            this.label12.Size = new System.Drawing.Size(46, 13);
+            this.label12.TabIndex = 54;
+            this.label12.Text = "ডায়রিয়া";
+            // 
+            // Q2310
+            // 
+            this.Q2310.Location = new System.Drawing.Point(348, 65);
+            this.Q2310.Name = "Q2310";
+            this.Q2310.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.Q2310.Size = new System.Drawing.Size(40, 20);
+            this.Q2310.TabIndex = 53;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Location = new System.Drawing.Point(202, 68);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(36, 13);
+            this.label29.TabIndex = 52;
+            this.label29.Text = "খিঁচুনি";
+            // 
+            // Q239
+            // 
+            this.Q239.Location = new System.Drawing.Point(348, 39);
+            this.Q239.Name = "Q239";
+            this.Q239.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.Q239.Size = new System.Drawing.Size(40, 20);
+            this.Q239.TabIndex = 51;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Location = new System.Drawing.Point(202, 42);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(63, 13);
+            this.label30.TabIndex = 50;
+            this.label30.Text = "লিভার রোগ";
+            // 
+            // Q237
+            // 
+            this.Q237.Location = new System.Drawing.Point(152, 169);
+            this.Q237.Name = "Q237";
+            this.Q237.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.Q237.Size = new System.Drawing.Size(40, 20);
+            this.Q237.TabIndex = 49;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Location = new System.Drawing.Point(6, 172);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(81, 13);
+            this.label31.TabIndex = 48;
+            this.label31.Text = "শ্বাসতন্ত্রের রোগ";
+            // 
+            // Q236
+            // 
+            this.Q236.Location = new System.Drawing.Point(152, 143);
+            this.Q236.Name = "Q236";
+            this.Q236.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.Q236.Size = new System.Drawing.Size(40, 20);
+            this.Q236.TabIndex = 47;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Location = new System.Drawing.Point(6, 146);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(66, 13);
+            this.label32.TabIndex = 46;
+            this.label32.Text = "কিডনি রোগ";
+            // 
+            // Q235
+            // 
+            this.Q235.Location = new System.Drawing.Point(152, 117);
+            this.Q235.Name = "Q235";
+            this.Q235.Size = new System.Drawing.Size(40, 20);
+            this.Q235.TabIndex = 45;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(6, 120);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(59, 13);
+            this.label33.TabIndex = 44;
+            this.label33.Text = "ডায়াবেটিস";
+            // 
+            // Q234
+            // 
+            this.Q234.Location = new System.Drawing.Point(152, 91);
+            this.Q234.Name = "Q234";
+            this.Q234.Size = new System.Drawing.Size(40, 20);
+            this.Q234.TabIndex = 43;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Location = new System.Drawing.Point(6, 94);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(57, 13);
+            this.label34.TabIndex = 42;
+            this.label34.Text = "রক্ত জমাট";
+            // 
+            // Q233
+            // 
+            this.Q233.Location = new System.Drawing.Point(152, 65);
+            this.Q233.Name = "Q233";
+            this.Q233.Size = new System.Drawing.Size(40, 20);
+            this.Q233.TabIndex = 41;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Location = new System.Drawing.Point(6, 68);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(65, 13);
+            this.label35.TabIndex = 40;
+            this.label35.Text = "হার্ট অ্যাটাক";
+            // 
+            // Q232
+            // 
+            this.Q232.Location = new System.Drawing.Point(152, 39);
+            this.Q232.Name = "Q232";
+            this.Q232.Size = new System.Drawing.Size(40, 20);
+            this.Q232.TabIndex = 39;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Location = new System.Drawing.Point(6, 42);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(37, 13);
+            this.label36.TabIndex = 38;
+            this.label36.Text = "স্ট্রোক";
+            // 
+            // Q231
+            // 
+            this.Q231.Location = new System.Drawing.Point(152, 13);
+            this.Q231.Name = "Q231";
+            this.Q231.Size = new System.Drawing.Size(40, 20);
+            this.Q231.TabIndex = 37;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Location = new System.Drawing.Point(6, 16);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(67, 13);
+            this.label37.TabIndex = 36;
+            this.label37.Text = "উচ্চ রক্তচাপ";
+            // 
+            // Q238
+            // 
+            this.Q238.Location = new System.Drawing.Point(348, 13);
+            this.Q238.Name = "Q238";
+            this.Q238.Size = new System.Drawing.Size(40, 20);
+            this.Q238.TabIndex = 57;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(202, 16);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(47, 13);
+            this.label38.TabIndex = 56;
+            this.label38.Text = "শ্বাস কষ্ট";
+            // 
+            // Q2312
+            // 
+            this.Q2312.Location = new System.Drawing.Point(348, 117);
+            this.Q2312.Name = "Q2312";
+            this.Q2312.Size = new System.Drawing.Size(40, 20);
+            this.Q2312.TabIndex = 59;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(202, 120);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(52, 13);
+            this.label39.TabIndex = 58;
+            this.label39.Text = "সর্দি কাশি";
+            // 
+            // Q2313
+            // 
+            this.Q2313.Location = new System.Drawing.Point(348, 143);
+            this.Q2313.Name = "Q2313";
+            this.Q2313.Size = new System.Drawing.Size(40, 20);
+            this.Q2313.TabIndex = 61;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(202, 146);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(45, 13);
+            this.label40.TabIndex = 60;
+            this.label40.Text = "অন্যান্য";
+            // 
+            // Q2314
+            // 
+            this.Q2314.Location = new System.Drawing.Point(348, 169);
+            this.Q2314.Name = "Q2314";
+            this.Q2314.Size = new System.Drawing.Size(40, 20);
+            this.Q2314.TabIndex = 63;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(202, 172);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(94, 13);
+            this.label41.TabIndex = 62;
+            this.label41.Text = "নির্দিস্ট করে লিখুন";
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.Q242);
+            this.groupBox6.Controls.Add(this.label56);
+            this.groupBox6.Controls.Add(this.Q241);
+            this.groupBox6.Controls.Add(this.label57);
+            this.groupBox6.Location = new System.Drawing.Point(6, 429);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(290, 73);
+            this.groupBox6.TabIndex = 39;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "2.4 আপনি কি শেষ ফলোআপ এর পরে";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.groupBox9);
+            this.groupBox7.Location = new System.Drawing.Point(6, 505);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(411, 191);
+            this.groupBox7.TabIndex = 40;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "2.5 কি কি উপসর্গ হয়েছে?";
+            // 
+            // groupBox9
+            // 
+            this.groupBox9.Controls.Add(this.Q2511);
+            this.groupBox9.Controls.Add(this.label42);
+            this.groupBox9.Controls.Add(this.Q2510);
+            this.groupBox9.Controls.Add(this.label43);
+            this.groupBox9.Controls.Add(this.Q259);
+            this.groupBox9.Controls.Add(this.label44);
+            this.groupBox9.Controls.Add(this.Q258);
+            this.groupBox9.Controls.Add(this.label46);
+            this.groupBox9.Controls.Add(this.Q257);
+            this.groupBox9.Controls.Add(this.label47);
+            this.groupBox9.Controls.Add(this.Q256);
+            this.groupBox9.Controls.Add(this.label50);
+            this.groupBox9.Controls.Add(this.Q255);
+            this.groupBox9.Controls.Add(this.label51);
+            this.groupBox9.Controls.Add(this.Q254);
+            this.groupBox9.Controls.Add(this.label52);
+            this.groupBox9.Controls.Add(this.Q253);
+            this.groupBox9.Controls.Add(this.label53);
+            this.groupBox9.Controls.Add(this.Q252);
+            this.groupBox9.Controls.Add(this.label54);
+            this.groupBox9.Controls.Add(this.Q251);
+            this.groupBox9.Controls.Add(this.label55);
+            this.groupBox9.Location = new System.Drawing.Point(9, 13);
+            this.groupBox9.Name = "groupBox9";
+            this.groupBox9.Size = new System.Drawing.Size(395, 170);
+            this.groupBox9.TabIndex = 1;
+            this.groupBox9.TabStop = false;
+            // 
+            // Q2511
+            // 
+            this.Q2511.Location = new System.Drawing.Point(348, 117);
+            this.Q2511.Name = "Q2511";
+            this.Q2511.Size = new System.Drawing.Size(40, 20);
+            this.Q2511.TabIndex = 63;
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Location = new System.Drawing.Point(202, 120);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(94, 13);
+            this.label42.TabIndex = 62;
+            this.label42.Text = "নির্দিস্ট করে লিখুন";
+            // 
+            // Q2510
+            // 
+            this.Q2510.Location = new System.Drawing.Point(348, 91);
+            this.Q2510.Name = "Q2510";
+            this.Q2510.Size = new System.Drawing.Size(40, 20);
+            this.Q2510.TabIndex = 61;
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(202, 94);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(45, 13);
+            this.label43.TabIndex = 60;
+            this.label43.Text = "অন্যান্য";
+            // 
+            // Q259
+            // 
+            this.Q259.Location = new System.Drawing.Point(348, 65);
+            this.Q259.Name = "Q259";
+            this.Q259.Size = new System.Drawing.Size(40, 20);
+            this.Q259.TabIndex = 59;
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Location = new System.Drawing.Point(202, 68);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(95, 13);
+            this.label44.TabIndex = 58;
+            this.label44.Text = "ক্ষুধামন্দা বা অরুচি";
+            // 
+            // Q258
+            // 
+            this.Q258.Location = new System.Drawing.Point(348, 39);
+            this.Q258.Name = "Q258";
+            this.Q258.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.Q258.Size = new System.Drawing.Size(40, 20);
+            this.Q258.TabIndex = 55;
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Location = new System.Drawing.Point(202, 42);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(25, 13);
+            this.label46.TabIndex = 54;
+            this.label46.Text = "বমি";
+            // 
+            // Q257
+            // 
+            this.Q257.Location = new System.Drawing.Point(348, 13);
+            this.Q257.Name = "Q257";
+            this.Q257.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.Q257.Size = new System.Drawing.Size(40, 20);
+            this.Q257.TabIndex = 53;
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(202, 16);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(47, 13);
+            this.label47.TabIndex = 52;
+            this.label47.Text = "শ্বাস কষ্ট";
+            // 
+            // Q256
+            // 
+            this.Q256.Location = new System.Drawing.Point(152, 143);
+            this.Q256.Name = "Q256";
+            this.Q256.ScrollBars = System.Windows.Forms.ScrollBars.Both;
+            this.Q256.Size = new System.Drawing.Size(40, 20);
+            this.Q256.TabIndex = 47;
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Location = new System.Drawing.Point(6, 146);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(46, 13);
+            this.label50.TabIndex = 46;
+            this.label50.Text = "ডায়রিয়া";
+            // 
+            // Q255
+            // 
+            this.Q255.Location = new System.Drawing.Point(152, 117);
+            this.Q255.Name = "Q255";
+            this.Q255.Size = new System.Drawing.Size(40, 20);
+            this.Q255.TabIndex = 45;
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Location = new System.Drawing.Point(6, 120);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(72, 13);
+            this.label51.TabIndex = 44;
+            this.label51.Text = "স্বাদ না পাওয়া";
+            // 
+            // Q254
+            // 
+            this.Q254.Location = new System.Drawing.Point(152, 91);
+            this.Q254.Name = "Q254";
+            this.Q254.Size = new System.Drawing.Size(40, 20);
+            this.Q254.TabIndex = 43;
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(6, 94);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(73, 13);
+            this.label52.TabIndex = 42;
+            this.label52.Text = "ঘ্রান না পাওয়া";
+            // 
+            // Q253
+            // 
+            this.Q253.Location = new System.Drawing.Point(152, 65);
+            this.Q253.Name = "Q253";
+            this.Q253.Size = new System.Drawing.Size(40, 20);
+            this.Q253.TabIndex = 41;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(6, 68);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(25, 13);
+            this.label53.TabIndex = 40;
+            this.label53.Text = "সর্দি";
+            // 
+            // Q252
+            // 
+            this.Q252.Location = new System.Drawing.Point(152, 39);
+            this.Q252.Name = "Q252";
+            this.Q252.Size = new System.Drawing.Size(40, 20);
+            this.Q252.TabIndex = 39;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(6, 42);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(25, 13);
+            this.label54.TabIndex = 38;
+            this.label54.Text = "জ্বর";
+            // 
+            // Q251
+            // 
+            this.Q251.Location = new System.Drawing.Point(152, 13);
+            this.Q251.Name = "Q251";
+            this.Q251.Size = new System.Drawing.Size(40, 20);
+            this.Q251.TabIndex = 37;
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(6, 16);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(31, 13);
+            this.label55.TabIndex = 36;
+            this.label55.Text = "কাশি";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.groupBox11);
+            this.groupBox10.Location = new System.Drawing.Point(425, 399);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Size = new System.Drawing.Size(280, 70);
+            this.groupBox10.TabIndex = 41;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "2.6";
+            // 
+            // groupBox11
+            // 
+            this.groupBox11.Controls.Add(this.Q26);
+            this.groupBox11.Controls.Add(this.label48);
+            this.groupBox11.Location = new System.Drawing.Point(6, 16);
+            this.groupBox11.Name = "groupBox11";
+            this.groupBox11.Size = new System.Drawing.Size(270, 46);
+            this.groupBox11.TabIndex = 0;
+            this.groupBox11.TabStop = false;
+            // 
+            // Q26
+            // 
+            this.Q26.Location = new System.Drawing.Point(223, 13);
+            this.Q26.Name = "Q26";
+            this.Q26.Size = new System.Drawing.Size(40, 20);
+            this.Q26.TabIndex = 37;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Location = new System.Drawing.Point(6, 16);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(110, 13);
+            this.label48.TabIndex = 36;
+            this.label48.Text = "তখন কি করেছিলেন?";
+            // 
+            // groupBox12
+            // 
+            this.groupBox12.Controls.Add(this.Q3);
+            this.groupBox12.Controls.Add(this.label45);
+            this.groupBox12.Location = new System.Drawing.Point(424, 475);
+            this.groupBox12.Name = "groupBox12";
+            this.groupBox12.Size = new System.Drawing.Size(270, 52);
+            this.groupBox12.TabIndex = 42;
+            this.groupBox12.TabStop = false;
+            this.groupBox12.Text = "3.";
+            // 
+            // Q3
+            // 
+            this.Q3.Location = new System.Drawing.Point(223, 15);
+            this.Q3.Name = "Q3";
+            this.Q3.Size = new System.Drawing.Size(40, 20);
+            this.Q3.TabIndex = 37;
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Location = new System.Drawing.Point(6, 18);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(190, 26);
+            this.label45.TabIndex = 36;
+            this.label45.Text = "কোভিড-১৯ ভ্যাকসিন উপযুক্ত আপনি \r\nবাদে পড়িবারে সবাই কি নিয়েছে?";
+            // 
+            // Q242
+            // 
+            this.Q242.Location = new System.Drawing.Point(171, 46);
+            this.Q242.Name = "Q242";
+            this.Q242.Size = new System.Drawing.Size(111, 20);
+            this.Q242.TabIndex = 43;
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(25, 49);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(88, 13);
+            this.label56.TabIndex = 42;
+            this.label56.Text = "আক্রান্তের তারিখ";
+            // 
+            // Q241
+            // 
+            this.Q241.Location = new System.Drawing.Point(242, 20);
+            this.Q241.Name = "Q241";
+            this.Q241.Size = new System.Drawing.Size(40, 20);
+            this.Q241.TabIndex = 41;
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(25, 23);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(211, 13);
+            this.label57.TabIndex = 40;
+            this.label57.Text = "কোভিড-১৯ রোগে আক্রান্ত হয়েছেন কিনা?";
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.Q4);
+            this.groupBox8.Controls.Add(this.label49);
+            this.groupBox8.Location = new System.Drawing.Point(425, 533);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(270, 52);
+            this.groupBox8.TabIndex = 43;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "4.";
+            // 
+            // Q4
+            // 
+            this.Q4.Location = new System.Drawing.Point(223, 15);
+            this.Q4.Name = "Q4";
+            this.Q4.Size = new System.Drawing.Size(40, 20);
+            this.Q4.TabIndex = 37;
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(6, 18);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(115, 26);
+            this.label49.TabIndex = 36;
+            this.label49.Text = "ভ্যাকসিন কিনতে হলে \r\nআপনি কি রাজী ?";
+            // 
+            // groupBox13
+            // 
+            this.groupBox13.Controls.Add(this.Q53);
+            this.groupBox13.Controls.Add(this.label60);
+            this.groupBox13.Controls.Add(this.Q52);
+            this.groupBox13.Controls.Add(this.label58);
+            this.groupBox13.Controls.Add(this.Q51);
+            this.groupBox13.Controls.Add(this.label59);
+            this.groupBox13.Location = new System.Drawing.Point(425, 591);
+            this.groupBox13.Name = "groupBox13";
+            this.groupBox13.Size = new System.Drawing.Size(290, 105);
+            this.groupBox13.TabIndex = 44;
+            this.groupBox13.TabStop = false;
+            this.groupBox13.Text = "5. কোভিড-১৯ এ আক্রান্ত হবার পর আপনার কি নিন্মলিখিত সমস্যার উদ্ভব হয়েছে?";
+            // 
+            // Q52
+            // 
+            this.Q52.Location = new System.Drawing.Point(232, 55);
+            this.Q52.Name = "Q52";
+            this.Q52.Size = new System.Drawing.Size(40, 20);
+            this.Q52.TabIndex = 43;
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(15, 58);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(43, 13);
+            this.label58.TabIndex = 42;
+            this.label58.Text = "অবসাদ";
+            // 
+            // Q51
+            // 
+            this.Q51.Location = new System.Drawing.Point(232, 29);
+            this.Q51.Name = "Q51";
+            this.Q51.Size = new System.Drawing.Size(40, 20);
+            this.Q51.TabIndex = 41;
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(15, 32);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(60, 13);
+            this.label59.TabIndex = 40;
+            this.label59.Text = "ভুলে যাওয়া";
+            // 
+            // Q53
+            // 
+            this.Q53.Location = new System.Drawing.Point(232, 81);
+            this.Q53.Name = "Q53";
+            this.Q53.Size = new System.Drawing.Size(40, 20);
+            this.Q53.TabIndex = 45;
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(15, 84);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(42, 13);
+            this.label60.TabIndex = 44;
+            this.label60.Text = "বিষন্নতা";
+            // 
+            // btnexit
+            // 
+            this.btnexit.Location = new System.Drawing.Point(817, 715);
+            this.btnexit.Name = "btnexit";
+            this.btnexit.Size = new System.Drawing.Size(75, 23);
+            this.btnexit.TabIndex = 45;
+            this.btnexit.Text = "Exit";
+            this.btnexit.UseVisualStyleBackColor = true;
             // 
             // home
             // 
@@ -316,31 +1447,38 @@ namespace CazStudy
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(904, 765);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.btnexit);
+            this.Controls.Add(this.groupBox13);
+            this.Controls.Add(this.groupBox8);
+            this.Controls.Add(this.groupBox12);
+            this.Controls.Add(this.groupBox10);
+            this.Controls.Add(this.groupBox7);
+            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.Q21);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.Q17);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.Q16);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.Q14);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.Q13);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.save);
-            this.Controls.Add(this.agetxt);
+            this.Controls.Add(this.txtcrfdate);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.pnametxt);
+            this.Controls.Add(this.txtinterviewer);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.pidtxt);
+            this.Controls.Add(this.Q15);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.vdatetxt);
+            this.Controls.Add(this.Q12);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.vnumtxt);
+            this.Controls.Add(this.Q11);
             this.Controls.Add(this.visitnum);
             this.Name = "home";
             this.Text = "Home";
@@ -349,6 +1487,28 @@ namespace CazStudy
             this.panel1.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox9.ResumeLayout(false);
+            this.groupBox9.PerformLayout();
+            this.groupBox10.ResumeLayout(false);
+            this.groupBox11.ResumeLayout(false);
+            this.groupBox11.PerformLayout();
+            this.groupBox12.ResumeLayout(false);
+            this.groupBox12.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            this.groupBox13.ResumeLayout(false);
+            this.groupBox13.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -359,14 +1519,14 @@ namespace CazStudy
         #endregion
 
         private System.Windows.Forms.Label visitnum;
-        private System.Windows.Forms.TextBox vnumtxt;
-        private System.Windows.Forms.TextBox vdatetxt;
+        private System.Windows.Forms.TextBox Q11;
+        private System.Windows.Forms.TextBox Q12;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox pidtxt;
+        private System.Windows.Forms.TextBox Q15;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox pnametxt;
+        private System.Windows.Forms.TextBox txtinterviewer;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox agetxt;
+        private System.Windows.Forms.TextBox txtcrfdate;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button save;
         private Panel panel1;
@@ -374,18 +1534,128 @@ namespace CazStudy
         private Panel panel2;
         private Panel panel3;
         private Label label6;
-        private TextBox textBox1;
+        private TextBox Q13;
         private Label label7;
-        private TextBox textBox2;
+        private TextBox Q14;
         private Label label8;
-        private TextBox textBox3;
+        private TextBox Q16;
         private Label label9;
-        private TextBox textBox4;
+        private TextBox Q17;
         private Label label10;
-        private TextBox textBox5;
+        private TextBox Q21;
         private Label label11;
-        private TextBox textBox6;
+        private Label label13;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
+        private TextBox Q2216;
+        private Label label18;
+        private TextBox Q2215;
+        private Label label17;
+        private TextBox Q2214;
+        private Label label16;
+        private TextBox Q2213;
+        private Label label15;
+        private TextBox Q2212;
+        private Label label14;
+        private TextBox Q2211;
+        private GroupBox groupBox3;
+        private TextBox Q22210;
+        private Label label28;
+        private TextBox Q2229;
+        private Label label27;
+        private TextBox Q2228;
+        private Label label26;
+        private TextBox Q2227;
+        private Label label25;
+        private TextBox Q2226;
+        private Label label19;
+        private TextBox Q2225;
+        private Label label20;
+        private TextBox Q2224;
+        private Label label21;
+        private TextBox Q2223;
+        private Label label22;
+        private TextBox Q2222;
+        private Label label23;
+        private TextBox Q2221;
+        private Label label24;
+        private GroupBox groupBox4;
+        private GroupBox groupBox5;
+        private TextBox Q2314;
+        private Label label41;
+        private TextBox Q2313;
+        private Label label40;
+        private TextBox Q2312;
+        private Label label39;
+        private TextBox Q238;
+        private Label label38;
+        private TextBox Q2311;
         private Label label12;
+        private TextBox Q2310;
+        private Label label29;
+        private TextBox Q239;
+        private Label label30;
+        private TextBox Q237;
+        private Label label31;
+        private TextBox Q236;
+        private Label label32;
+        private TextBox Q235;
+        private Label label33;
+        private TextBox Q234;
+        private Label label34;
+        private TextBox Q233;
+        private Label label35;
+        private TextBox Q232;
+        private Label label36;
+        private TextBox Q231;
+        private Label label37;
+        private GroupBox groupBox6;
+        private TextBox Q242;
+        private Label label56;
+        private TextBox Q241;
+        private Label label57;
+        private GroupBox groupBox7;
+        private GroupBox groupBox9;
+        private TextBox Q2511;
+        private Label label42;
+        private TextBox Q2510;
+        private Label label43;
+        private TextBox Q259;
+        private Label label44;
+        private TextBox Q258;
+        private Label label46;
+        private TextBox Q257;
+        private Label label47;
+        private TextBox Q256;
+        private Label label50;
+        private TextBox Q255;
+        private Label label51;
+        private TextBox Q254;
+        private Label label52;
+        private TextBox Q253;
+        private Label label53;
+        private TextBox Q252;
+        private Label label54;
+        private TextBox Q251;
+        private Label label55;
+        private GroupBox groupBox10;
+        private GroupBox groupBox11;
+        private TextBox Q26;
+        private Label label48;
+        private GroupBox groupBox12;
+        private TextBox Q3;
+        private Label label45;
+        private GroupBox groupBox8;
+        private TextBox Q4;
+        private Label label49;
+        private GroupBox groupBox13;
+        private TextBox Q53;
+        private Label label60;
+        private TextBox Q52;
+        private Label label58;
+        private TextBox Q51;
+        private Label label59;
+        private Button btnexit;
     }
 }
 

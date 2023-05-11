@@ -14,9 +14,9 @@ namespace CazStudy
     public partial class Login : Form
 
     {
-        SqlCommand cmd;
+        /*SqlCommand cmd;
         SqlConnection cn;
-        SqlDataReader dr;
+        SqlDataReader dr;*/
 
         public Login()
         {
@@ -75,7 +75,7 @@ namespace CazStudy
         private void btnlogin_Click(object sender, EventArgs e)
         {
             SqlConnection con = Program.ServerCon();
-            string qry1 = "Select * from user where Password=@Password and Username=@Username";
+            string qry1 = "Select * from userdata where Password=@Password and Username=@Username";
             SqlCommand com = new SqlCommand(qry1, con);
 
             com.Parameters.AddWithValue("@Username", this.txtuser.Text.ToString().Trim());

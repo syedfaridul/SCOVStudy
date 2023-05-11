@@ -14,26 +14,25 @@ namespace CazStudy
     public partial class home : Form
     {
         SqlCommand cmd;
-        SqlConnection cn;
+        SqlConnection con = Program.ServerCon();
         SqlDataReader dr;
-        public home(string user)
+        public home(string userN)
         {
             InitializeComponent();
         }
 
         private void home_Load(object sender, EventArgs e)
         {
-            cn = new SqlConnection(@"Data Source=DT-6728\SQLEXPRESS;Initial Catalog=scov;User ID=sa;Password=F@ridul123");
-            cn.Open();
+
         }
 
         private void save_Click(object sender, EventArgs e)
         {
-            if (vnumtxt.Text != string.Empty || vdatetxt.Text != string.Empty || pidtxt.Text != string.Empty || pnametxt.Text != string.Empty || agetxt.Text != string.Empty)
+            if (Q11.Text != string.Empty || Q12.Text != string.Empty || Q15.Text != string.Empty || txtinterviewer.Text != string.Empty || txtcrfdate.Text != string.Empty)
             {
-                if (pidtxt.Text != string.Empty)
+                if (Q15.Text != string.Empty)
                 {
-                    cmd = new SqlCommand("select * from folowcrf where pidtxt ='" + pidtxt.Text + "'", cn);
+                    cmd = new SqlCommand("select * from folowcrf where pidtxt ='" + Q15.Text + "'", con);
                     dr = cmd.ExecuteReader();
                     if (dr.Read())
                     {
@@ -43,51 +42,51 @@ namespace CazStudy
                     else
                     {
                         dr.Close();
-                        cmd = new SqlCommand("insert into folowcrf values(@vnumtxt,@vdatetxt,@pidtxt,@pnametxt,@agetxt)", cn);
-                        cmd.Parameters.AddWithValue("vnumtxt", vnumtxt.Text);
-                        cmd.Parameters.AddWithValue("vdatetxt", vdatetxt.Text);
-                        cmd.Parameters.AddWithValue("pidtxt", pidtxt.Text);
-                        cmd.Parameters.AddWithValue("pnametxt", pnametxt.Text);
-                        cmd.Parameters.AddWithValue("agetxt", agetxt.Text);
+                        cmd = new SqlCommand("insert into folowcrf values(@vnumtxt,@vdatetxt,@pidtxt,@pnametxt,@agetxt)", con);
+                        cmd.Parameters.AddWithValue("vnumtxt", Q11.Text);
+                        cmd.Parameters.AddWithValue("vdatetxt", Q12.Text);
+                        cmd.Parameters.AddWithValue("pidtxt", Q15.Text);
+                        cmd.Parameters.AddWithValue("pnametxt", txtinterviewer.Text);
+                        cmd.Parameters.AddWithValue("agetxt", txtcrfdate.Text);
 
                         int v = cmd.ExecuteNonQuery();
                         MessageBox.Show("Your Data is Inserted . Please Input Next From now.", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        vnumtxt.Text = "";
-                        vdatetxt.Text = "";
-                        pidtxt.Text = "";
-                        pnametxt.Text = "";
-                        agetxt.Text = "";
-                        vnumtxt.Focus();
+                        Q11.Text = "";
+                        Q12.Text = "";
+                        Q15.Text = "";
+                        txtinterviewer.Text = "";
+                        txtcrfdate.Text = "";
+                        Q11.Focus();
 
                     }
                 }
                 else
                 {
                     MessageBox.Show("Please enter Correct PID ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    pidtxt.Focus();
+                    Q15.Focus();
                 }
             }
             else
             {
-                if (vnumtxt.Text != string.Empty)
+                if (Q11.Text != string.Empty)
                 {
-                    vnumtxt.Focus();
+                    Q11.Focus();
                 }
-                else if (vdatetxt.Text != string.Empty)
+                else if (Q12.Text != string.Empty)
                 {
-                    vdatetxt.Focus();
+                    Q12.Focus();
                 }
-                else if (pidtxt.Text != string.Empty)
+                else if (Q15.Text != string.Empty)
                 {
-                    pidtxt.Focus();
+                    Q15.Focus();
                 }
-                else if (pnametxt.Text != string.Empty)
+                else if (txtinterviewer.Text != string.Empty)
                 {
-                    pnametxt.Focus();
+                    txtinterviewer.Focus();
                 }
-                else if (agetxt.Text != string.Empty)
+                else if (txtcrfdate.Text != string.Empty)
                 {
-                    agetxt.Focus();
+                    txtcrfdate.Focus();
                 }
 
                 MessageBox.Show("Please enter value in all field.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -102,7 +101,7 @@ namespace CazStudy
             {
                 if (e.KeyChar == (char)Keys.Enter)
                 {
-                    vdatetxt.Focus();
+                    Q12.Focus();
                 }
             }
             catch (Exception ex)
@@ -115,11 +114,11 @@ namespace CazStudy
         {
             try
             {
-                if (vnumtxt.Text != "1" & vnumtxt.Text != "2" & vnumtxt.Text != "3")
+                if (Q11.Text != "1" & Q11.Text != "2" & Q11.Text != "3")
                 {
                     MessageBox.Show("Please insert a valid Result!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                    vnumtxt.Clear();
-                    vnumtxt.Focus();
+                    Q11.Clear();
+                    Q11.Focus();
                 }
             }
             catch (Exception ex)
@@ -134,7 +133,7 @@ namespace CazStudy
             {
                 if (e.KeyChar == (char)Keys.Enter)
                 {
-                    pidtxt.Focus();
+                    Q15.Focus();
                 }
             }
             catch (Exception ex)
@@ -147,11 +146,11 @@ namespace CazStudy
         {
             try
             {
-                if (vdatetxt.Text != "1" & vdatetxt.Text != "2" & vdatetxt.Text != "3")
+                if (Q12.Text != "1" & Q12.Text != "2" & Q12.Text != "3")
                 {
                     MessageBox.Show("Please insert a valid Result!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Stop);
-                    vdatetxt.Clear();
-                    vdatetxt.Focus();
+                    Q12.Clear();
+                    Q12.Focus();
                 }
             }
             catch (Exception ex)
@@ -159,5 +158,7 @@ namespace CazStudy
                 MessageBox.Show(ex.Message);
             }
         }
+
+        
     }
 }
