@@ -34,7 +34,6 @@ namespace CazStudy
         {
             this.visitnum = new System.Windows.Forms.Label();
             this.Q11 = new System.Windows.Forms.TextBox();
-            this.Q12 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.Q15 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,7 +41,7 @@ namespace CazStudy
             this.label3 = new System.Windows.Forms.Label();
             this.txtcrfdate = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.save = new System.Windows.Forms.Button();
+            this.btnsave = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -52,11 +51,10 @@ namespace CazStudy
             this.label7 = new System.Windows.Forms.Label();
             this.Q14 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.Q16 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.Q17 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.Q21 = new System.Windows.Forms.TextBox();
+            this.Q211 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -95,6 +93,14 @@ namespace CazStudy
             this.Q2211 = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.Q2314 = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.Q2313 = new System.Windows.Forms.TextBox();
+            this.label40 = new System.Windows.Forms.Label();
+            this.Q2312 = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.Q238 = new System.Windows.Forms.TextBox();
+            this.label38 = new System.Windows.Forms.Label();
             this.Q2311 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.Q2310 = new System.Windows.Forms.TextBox();
@@ -115,15 +121,11 @@ namespace CazStudy
             this.label36 = new System.Windows.Forms.Label();
             this.Q231 = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.Q238 = new System.Windows.Forms.TextBox();
-            this.label38 = new System.Windows.Forms.Label();
-            this.Q2312 = new System.Windows.Forms.TextBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.Q2313 = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.Q2314 = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.Q242 = new System.Windows.Forms.TextBox();
+            this.label56 = new System.Windows.Forms.Label();
+            this.Q241 = new System.Windows.Forms.TextBox();
+            this.label57 = new System.Windows.Forms.Label();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.Q2511 = new System.Windows.Forms.TextBox();
@@ -155,21 +157,21 @@ namespace CazStudy
             this.groupBox12 = new System.Windows.Forms.GroupBox();
             this.Q3 = new System.Windows.Forms.TextBox();
             this.label45 = new System.Windows.Forms.Label();
-            this.Q242 = new System.Windows.Forms.TextBox();
-            this.label56 = new System.Windows.Forms.Label();
-            this.Q241 = new System.Windows.Forms.TextBox();
-            this.label57 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
             this.Q4 = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
+            this.Q53 = new System.Windows.Forms.TextBox();
+            this.label60 = new System.Windows.Forms.Label();
             this.Q52 = new System.Windows.Forms.TextBox();
             this.label58 = new System.Windows.Forms.Label();
             this.Q51 = new System.Windows.Forms.TextBox();
             this.label59 = new System.Windows.Forms.Label();
-            this.Q53 = new System.Windows.Forms.TextBox();
-            this.label60 = new System.Windows.Forms.Label();
             this.btnexit = new System.Windows.Forms.Button();
+            this.Q212 = new System.Windows.Forms.TextBox();
+            this.label125 = new System.Windows.Forms.Label();
+            this.Q12 = new System.Windows.Forms.MaskedTextBox();
+            this.Q16 = new System.Windows.Forms.MaskedTextBox();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -202,18 +204,8 @@ namespace CazStudy
             this.Q11.Name = "Q11";
             this.Q11.Size = new System.Drawing.Size(36, 20);
             this.Q11.TabIndex = 1;
-            this.Q11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.vnumtxt_KeyPress);
-            this.Q11.Leave += new System.EventHandler(this.vnumtxt_Leave);
-            // 
-            // Q12
-            // 
-            this.Q12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Q12.Location = new System.Drawing.Point(339, 91);
-            this.Q12.Name = "Q12";
-            this.Q12.Size = new System.Drawing.Size(85, 21);
-            this.Q12.TabIndex = 20;
-            this.Q12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.vdatetxt_KeyPress);
-            this.Q12.Leave += new System.EventHandler(this.vdatetxt_Leave);
+            this.Q11.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q11_KeyPress);
+            this.Q11.Leave += new System.EventHandler(this.Q11_Leave);
             // 
             // label1
             // 
@@ -230,6 +222,8 @@ namespace CazStudy
             this.Q15.Name = "Q15";
             this.Q15.Size = new System.Drawing.Size(117, 20);
             this.Q15.TabIndex = 5;
+            this.Q15.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q15_KeyPress);
+            this.Q15.Leave += new System.EventHandler(this.Q15_Leave);
             // 
             // label2
             // 
@@ -246,6 +240,8 @@ namespace CazStudy
             this.txtinterviewer.Name = "txtinterviewer";
             this.txtinterviewer.Size = new System.Drawing.Size(218, 20);
             this.txtinterviewer.TabIndex = 7;
+            this.txtinterviewer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtinterviewer_KeyPress);
+            this.txtinterviewer.Leave += new System.EventHandler(this.txtinterviewer_Leave);
             // 
             // label3
             // 
@@ -262,6 +258,8 @@ namespace CazStudy
             this.txtcrfdate.Name = "txtcrfdate";
             this.txtcrfdate.Size = new System.Drawing.Size(116, 20);
             this.txtcrfdate.TabIndex = 9;
+            this.txtcrfdate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtcrfdate_KeyPress);
+            this.txtcrfdate.Leave += new System.EventHandler(this.txtcrfdate_Leave);
             // 
             // label4
             // 
@@ -272,15 +270,15 @@ namespace CazStudy
             this.label4.TabIndex = 8;
             this.label4.Text = "তারিখ";
             // 
-            // save
+            // btnsave
             // 
-            this.save.Location = new System.Drawing.Point(817, 560);
-            this.save.Name = "save";
-            this.save.Size = new System.Drawing.Size(75, 23);
-            this.save.TabIndex = 10;
-            this.save.Text = "Save";
-            this.save.UseVisualStyleBackColor = true;
-            this.save.Click += new System.EventHandler(this.save_Click);
+            this.btnsave.Location = new System.Drawing.Point(817, 560);
+            this.btnsave.Name = "btnsave";
+            this.btnsave.Size = new System.Drawing.Size(75, 23);
+            this.btnsave.TabIndex = 10;
+            this.btnsave.Text = "Save";
+            this.btnsave.UseVisualStyleBackColor = true;
+            this.btnsave.Click += new System.EventHandler(this.save_Click);
             // 
             // panel1
             // 
@@ -338,6 +336,8 @@ namespace CazStudy
             this.Q13.Name = "Q13";
             this.Q13.Size = new System.Drawing.Size(85, 21);
             this.Q13.TabIndex = 25;
+            this.Q13.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q13_KeyPress);
+            this.Q13.Leave += new System.EventHandler(this.Q13_Leave);
             // 
             // label7
             // 
@@ -355,6 +355,8 @@ namespace CazStudy
             this.Q14.Name = "Q14";
             this.Q14.Size = new System.Drawing.Size(146, 21);
             this.Q14.TabIndex = 27;
+            this.Q14.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q14_KeyPress);
+            this.Q14.Leave += new System.EventHandler(this.Q14_Leave);
             // 
             // label8
             // 
@@ -364,14 +366,6 @@ namespace CazStudy
             this.label8.Size = new System.Drawing.Size(50, 13);
             this.label8.TabIndex = 26;
             this.label8.Text = "1.4 NID :";
-            // 
-            // Q16
-            // 
-            this.Q16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Q16.Location = new System.Drawing.Point(67, 116);
-            this.Q16.Name = "Q16";
-            this.Q16.Size = new System.Drawing.Size(85, 21);
-            this.Q16.TabIndex = 29;
             // 
             // label9
             // 
@@ -389,6 +383,8 @@ namespace CazStudy
             this.Q17.Name = "Q17";
             this.Q17.Size = new System.Drawing.Size(160, 21);
             this.Q17.TabIndex = 31;
+            this.Q17.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q17_KeyPress);
+            this.Q17.Leave += new System.EventHandler(this.Q17_Leave);
             // 
             // label10
             // 
@@ -399,13 +395,15 @@ namespace CazStudy
             this.label10.TabIndex = 30;
             this.label10.Text = "1.7 Vac Reg Num :";
             // 
-            // Q21
+            // Q211
             // 
-            this.Q21.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Q21.Location = new System.Drawing.Point(509, 118);
-            this.Q21.Name = "Q21";
-            this.Q21.Size = new System.Drawing.Size(85, 21);
-            this.Q21.TabIndex = 33;
+            this.Q211.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Q211.Location = new System.Drawing.Point(509, 118);
+            this.Q211.Name = "Q211";
+            this.Q211.Size = new System.Drawing.Size(85, 21);
+            this.Q211.TabIndex = 33;
+            this.Q211.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q211_KeyPress);
+            this.Q211.Leave += new System.EventHandler(this.Q211_Leave);
             // 
             // label11
             // 
@@ -472,6 +470,8 @@ namespace CazStudy
             this.Q22210.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Q22210.Size = new System.Drawing.Size(40, 20);
             this.Q22210.TabIndex = 55;
+            this.Q22210.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q22210_KeyPress);
+            this.Q22210.Leave += new System.EventHandler(this.Q22210_Leave);
             // 
             // label28
             // 
@@ -489,6 +489,8 @@ namespace CazStudy
             this.Q2229.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Q2229.Size = new System.Drawing.Size(40, 20);
             this.Q2229.TabIndex = 53;
+            this.Q2229.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2229_KeyPress);
+            this.Q2229.Leave += new System.EventHandler(this.Q2229_Leave);
             // 
             // label27
             // 
@@ -506,6 +508,8 @@ namespace CazStudy
             this.Q2228.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Q2228.Size = new System.Drawing.Size(40, 20);
             this.Q2228.TabIndex = 51;
+            this.Q2228.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2228_KeyPress);
+            this.Q2228.Leave += new System.EventHandler(this.Q2228_Leave);
             // 
             // label26
             // 
@@ -523,6 +527,8 @@ namespace CazStudy
             this.Q2227.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Q2227.Size = new System.Drawing.Size(40, 20);
             this.Q2227.TabIndex = 49;
+            this.Q2227.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2227_KeyPress);
+            this.Q2227.Leave += new System.EventHandler(this.Q2227_Leave);
             // 
             // label25
             // 
@@ -540,6 +546,8 @@ namespace CazStudy
             this.Q2226.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Q2226.Size = new System.Drawing.Size(40, 20);
             this.Q2226.TabIndex = 47;
+            this.Q2226.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2226_KeyPress);
+            this.Q2226.Leave += new System.EventHandler(this.Q2226_Leave);
             // 
             // label19
             // 
@@ -556,6 +564,8 @@ namespace CazStudy
             this.Q2225.Name = "Q2225";
             this.Q2225.Size = new System.Drawing.Size(40, 20);
             this.Q2225.TabIndex = 45;
+            this.Q2225.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2225_KeyPress);
+            this.Q2225.Leave += new System.EventHandler(this.Q2225_Leave);
             // 
             // label20
             // 
@@ -572,6 +582,8 @@ namespace CazStudy
             this.Q2224.Name = "Q2224";
             this.Q2224.Size = new System.Drawing.Size(40, 20);
             this.Q2224.TabIndex = 43;
+            this.Q2224.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2224_KeyPress);
+            this.Q2224.Leave += new System.EventHandler(this.Q2224_Leave);
             // 
             // label21
             // 
@@ -588,6 +600,8 @@ namespace CazStudy
             this.Q2223.Name = "Q2223";
             this.Q2223.Size = new System.Drawing.Size(40, 20);
             this.Q2223.TabIndex = 41;
+            this.Q2223.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2223_KeyPress);
+            this.Q2223.Leave += new System.EventHandler(this.Q2223_Leave);
             // 
             // label22
             // 
@@ -604,6 +618,8 @@ namespace CazStudy
             this.Q2222.Name = "Q2222";
             this.Q2222.Size = new System.Drawing.Size(40, 20);
             this.Q2222.TabIndex = 39;
+            this.Q2222.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2222_KeyPress);
+            this.Q2222.Leave += new System.EventHandler(this.Q2222_Leave);
             // 
             // label23
             // 
@@ -620,6 +636,8 @@ namespace CazStudy
             this.Q2221.Name = "Q2221";
             this.Q2221.Size = new System.Drawing.Size(40, 20);
             this.Q2221.TabIndex = 37;
+            this.Q2221.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2221_KeyPress);
+            this.Q2221.Leave += new System.EventHandler(this.Q2221_Leave);
             // 
             // label24
             // 
@@ -658,6 +676,8 @@ namespace CazStudy
             this.Q2216.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Q2216.Size = new System.Drawing.Size(93, 20);
             this.Q2216.TabIndex = 47;
+            this.Q2216.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2216_KeyPress);
+            this.Q2216.Leave += new System.EventHandler(this.Q2216_Leave);
             // 
             // label18
             // 
@@ -674,6 +694,8 @@ namespace CazStudy
             this.Q2215.Name = "Q2215";
             this.Q2215.Size = new System.Drawing.Size(40, 20);
             this.Q2215.TabIndex = 45;
+            this.Q2215.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2215_KeyPress);
+            this.Q2215.Leave += new System.EventHandler(this.Q2215_Leave);
             // 
             // label17
             // 
@@ -690,6 +712,8 @@ namespace CazStudy
             this.Q2214.Name = "Q2214";
             this.Q2214.Size = new System.Drawing.Size(40, 20);
             this.Q2214.TabIndex = 43;
+            this.Q2214.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2214_KeyPress);
+            this.Q2214.Leave += new System.EventHandler(this.Q2214_Leave);
             // 
             // label16
             // 
@@ -706,6 +730,8 @@ namespace CazStudy
             this.Q2213.Name = "Q2213";
             this.Q2213.Size = new System.Drawing.Size(40, 20);
             this.Q2213.TabIndex = 41;
+            this.Q2213.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2213_KeyPress);
+            this.Q2213.Leave += new System.EventHandler(this.Q2213_Leave);
             // 
             // label15
             // 
@@ -722,6 +748,8 @@ namespace CazStudy
             this.Q2212.Name = "Q2212";
             this.Q2212.Size = new System.Drawing.Size(40, 20);
             this.Q2212.TabIndex = 39;
+            this.Q2212.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2212_KeyPress);
+            this.Q2212.Leave += new System.EventHandler(this.Q2212_Leave);
             // 
             // label14
             // 
@@ -738,6 +766,8 @@ namespace CazStudy
             this.Q2211.Name = "Q2211";
             this.Q2211.Size = new System.Drawing.Size(40, 20);
             this.Q2211.TabIndex = 37;
+            this.Q2211.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2211_KeyPress);
+            this.Q2211.Leave += new System.EventHandler(this.Q2211_Leave);
             // 
             // groupBox4
             // 
@@ -786,6 +816,78 @@ namespace CazStudy
             this.groupBox5.TabIndex = 1;
             this.groupBox5.TabStop = false;
             // 
+            // Q2314
+            // 
+            this.Q2314.Location = new System.Drawing.Point(348, 169);
+            this.Q2314.Name = "Q2314";
+            this.Q2314.Size = new System.Drawing.Size(40, 20);
+            this.Q2314.TabIndex = 63;
+            this.Q2314.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2314_KeyPress);
+            this.Q2314.Leave += new System.EventHandler(this.Q2314_Leave);
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Location = new System.Drawing.Point(202, 172);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(94, 13);
+            this.label41.TabIndex = 62;
+            this.label41.Text = "নির্দিস্ট করে লিখুন";
+            // 
+            // Q2313
+            // 
+            this.Q2313.Location = new System.Drawing.Point(348, 143);
+            this.Q2313.Name = "Q2313";
+            this.Q2313.Size = new System.Drawing.Size(40, 20);
+            this.Q2313.TabIndex = 61;
+            this.Q2313.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2313_KeyPress);
+            this.Q2313.Leave += new System.EventHandler(this.Q2313_Leave);
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Location = new System.Drawing.Point(202, 146);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(45, 13);
+            this.label40.TabIndex = 60;
+            this.label40.Text = "অন্যান্য";
+            // 
+            // Q2312
+            // 
+            this.Q2312.Location = new System.Drawing.Point(348, 117);
+            this.Q2312.Name = "Q2312";
+            this.Q2312.Size = new System.Drawing.Size(40, 20);
+            this.Q2312.TabIndex = 59;
+            this.Q2312.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2312_KeyPress);
+            this.Q2312.Leave += new System.EventHandler(this.Q2312_Leave);
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Location = new System.Drawing.Point(202, 120);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(52, 13);
+            this.label39.TabIndex = 58;
+            this.label39.Text = "সর্দি কাশি";
+            // 
+            // Q238
+            // 
+            this.Q238.Location = new System.Drawing.Point(348, 13);
+            this.Q238.Name = "Q238";
+            this.Q238.Size = new System.Drawing.Size(40, 20);
+            this.Q238.TabIndex = 57;
+            this.Q238.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q238_KeyPress);
+            this.Q238.Leave += new System.EventHandler(this.Q238_Leave);
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Location = new System.Drawing.Point(202, 16);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(47, 13);
+            this.label38.TabIndex = 56;
+            this.label38.Text = "শ্বাস কষ্ট";
+            // 
             // Q2311
             // 
             this.Q2311.Location = new System.Drawing.Point(348, 91);
@@ -793,6 +895,8 @@ namespace CazStudy
             this.Q2311.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Q2311.Size = new System.Drawing.Size(40, 20);
             this.Q2311.TabIndex = 55;
+            this.Q2311.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2311_KeyPress);
+            this.Q2311.Leave += new System.EventHandler(this.Q2311_Leave);
             // 
             // label12
             // 
@@ -810,6 +914,8 @@ namespace CazStudy
             this.Q2310.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Q2310.Size = new System.Drawing.Size(40, 20);
             this.Q2310.TabIndex = 53;
+            this.Q2310.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2310_KeyPress);
+            this.Q2310.Leave += new System.EventHandler(this.Q2310_Leave);
             // 
             // label29
             // 
@@ -827,6 +933,8 @@ namespace CazStudy
             this.Q239.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Q239.Size = new System.Drawing.Size(40, 20);
             this.Q239.TabIndex = 51;
+            this.Q239.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q239_KeyPress);
+            this.Q239.Leave += new System.EventHandler(this.Q239_Leave);
             // 
             // label30
             // 
@@ -844,6 +952,8 @@ namespace CazStudy
             this.Q237.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Q237.Size = new System.Drawing.Size(40, 20);
             this.Q237.TabIndex = 49;
+            this.Q237.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q237_KeyPress);
+            this.Q237.Leave += new System.EventHandler(this.Q237_Leave);
             // 
             // label31
             // 
@@ -861,6 +971,8 @@ namespace CazStudy
             this.Q236.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Q236.Size = new System.Drawing.Size(40, 20);
             this.Q236.TabIndex = 47;
+            this.Q236.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q236_KeyPress);
+            this.Q236.Leave += new System.EventHandler(this.Q236_Leave);
             // 
             // label32
             // 
@@ -893,6 +1005,8 @@ namespace CazStudy
             this.Q234.Name = "Q234";
             this.Q234.Size = new System.Drawing.Size(40, 20);
             this.Q234.TabIndex = 43;
+            this.Q234.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q234_KeyPress);
+            this.Q234.Leave += new System.EventHandler(this.Q234_Leave);
             // 
             // label34
             // 
@@ -909,6 +1023,8 @@ namespace CazStudy
             this.Q233.Name = "Q233";
             this.Q233.Size = new System.Drawing.Size(40, 20);
             this.Q233.TabIndex = 41;
+            this.Q233.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q233_KeyPress);
+            this.Q233.Leave += new System.EventHandler(this.Q233_Leave);
             // 
             // label35
             // 
@@ -925,6 +1041,8 @@ namespace CazStudy
             this.Q232.Name = "Q232";
             this.Q232.Size = new System.Drawing.Size(40, 20);
             this.Q232.TabIndex = 39;
+            this.Q232.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q232_KeyPress);
+            this.Q232.Leave += new System.EventHandler(this.Q232_Leave);
             // 
             // label36
             // 
@@ -941,6 +1059,8 @@ namespace CazStudy
             this.Q231.Name = "Q231";
             this.Q231.Size = new System.Drawing.Size(40, 20);
             this.Q231.TabIndex = 37;
+            this.Q231.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q231_KeyPress);
+            this.Q231.Leave += new System.EventHandler(this.Q231_Leave);
             // 
             // label37
             // 
@@ -950,70 +1070,6 @@ namespace CazStudy
             this.label37.Size = new System.Drawing.Size(67, 13);
             this.label37.TabIndex = 36;
             this.label37.Text = "উচ্চ রক্তচাপ";
-            // 
-            // Q238
-            // 
-            this.Q238.Location = new System.Drawing.Point(348, 13);
-            this.Q238.Name = "Q238";
-            this.Q238.Size = new System.Drawing.Size(40, 20);
-            this.Q238.TabIndex = 57;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(202, 16);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(47, 13);
-            this.label38.TabIndex = 56;
-            this.label38.Text = "শ্বাস কষ্ট";
-            // 
-            // Q2312
-            // 
-            this.Q2312.Location = new System.Drawing.Point(348, 117);
-            this.Q2312.Name = "Q2312";
-            this.Q2312.Size = new System.Drawing.Size(40, 20);
-            this.Q2312.TabIndex = 59;
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(202, 120);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(52, 13);
-            this.label39.TabIndex = 58;
-            this.label39.Text = "সর্দি কাশি";
-            // 
-            // Q2313
-            // 
-            this.Q2313.Location = new System.Drawing.Point(348, 143);
-            this.Q2313.Name = "Q2313";
-            this.Q2313.Size = new System.Drawing.Size(40, 20);
-            this.Q2313.TabIndex = 61;
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(202, 146);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(45, 13);
-            this.label40.TabIndex = 60;
-            this.label40.Text = "অন্যান্য";
-            // 
-            // Q2314
-            // 
-            this.Q2314.Location = new System.Drawing.Point(348, 169);
-            this.Q2314.Name = "Q2314";
-            this.Q2314.Size = new System.Drawing.Size(40, 20);
-            this.Q2314.TabIndex = 63;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(202, 172);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(94, 13);
-            this.label41.TabIndex = 62;
-            this.label41.Text = "নির্দিস্ট করে লিখুন";
             // 
             // groupBox6
             // 
@@ -1027,6 +1083,42 @@ namespace CazStudy
             this.groupBox6.TabIndex = 39;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "2.4 আপনি কি শেষ ফলোআপ এর পরে";
+            // 
+            // Q242
+            // 
+            this.Q242.Location = new System.Drawing.Point(171, 46);
+            this.Q242.Name = "Q242";
+            this.Q242.Size = new System.Drawing.Size(111, 20);
+            this.Q242.TabIndex = 43;
+            this.Q242.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q242_KeyPress);
+            this.Q242.Leave += new System.EventHandler(this.Q242_Leave);
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(25, 49);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(88, 13);
+            this.label56.TabIndex = 42;
+            this.label56.Text = "আক্রান্তের তারিখ";
+            // 
+            // Q241
+            // 
+            this.Q241.Location = new System.Drawing.Point(242, 20);
+            this.Q241.Name = "Q241";
+            this.Q241.Size = new System.Drawing.Size(40, 20);
+            this.Q241.TabIndex = 41;
+            this.Q241.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q241_KeyPress);
+            this.Q241.Leave += new System.EventHandler(this.Q241_Leave);
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(25, 23);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(211, 13);
+            this.label57.TabIndex = 40;
+            this.label57.Text = "কোভিড-১৯ রোগে আক্রান্ত হয়েছেন কিনা?";
             // 
             // groupBox7
             // 
@@ -1074,6 +1166,8 @@ namespace CazStudy
             this.Q2511.Name = "Q2511";
             this.Q2511.Size = new System.Drawing.Size(40, 20);
             this.Q2511.TabIndex = 63;
+            this.Q2511.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2511_KeyPress);
+            this.Q2511.Leave += new System.EventHandler(this.Q2511_Leave);
             // 
             // label42
             // 
@@ -1090,6 +1184,8 @@ namespace CazStudy
             this.Q2510.Name = "Q2510";
             this.Q2510.Size = new System.Drawing.Size(40, 20);
             this.Q2510.TabIndex = 61;
+            this.Q2510.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q2510_KeyPress);
+            this.Q2510.Leave += new System.EventHandler(this.Q2510_Leave);
             // 
             // label43
             // 
@@ -1106,6 +1202,8 @@ namespace CazStudy
             this.Q259.Name = "Q259";
             this.Q259.Size = new System.Drawing.Size(40, 20);
             this.Q259.TabIndex = 59;
+            this.Q259.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q259_KeyPress);
+            this.Q259.Leave += new System.EventHandler(this.Q259_Leave);
             // 
             // label44
             // 
@@ -1123,6 +1221,8 @@ namespace CazStudy
             this.Q258.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Q258.Size = new System.Drawing.Size(40, 20);
             this.Q258.TabIndex = 55;
+            this.Q258.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q258_KeyPress);
+            this.Q258.Leave += new System.EventHandler(this.Q258_Leave);
             // 
             // label46
             // 
@@ -1140,6 +1240,8 @@ namespace CazStudy
             this.Q257.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Q257.Size = new System.Drawing.Size(40, 20);
             this.Q257.TabIndex = 53;
+            this.Q257.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q257_KeyPress);
+            this.Q257.Leave += new System.EventHandler(this.Q257_Leave);
             // 
             // label47
             // 
@@ -1157,6 +1259,8 @@ namespace CazStudy
             this.Q256.ScrollBars = System.Windows.Forms.ScrollBars.Both;
             this.Q256.Size = new System.Drawing.Size(40, 20);
             this.Q256.TabIndex = 47;
+            this.Q256.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q256_KeyPress);
+            this.Q256.Leave += new System.EventHandler(this.Q256_Leave);
             // 
             // label50
             // 
@@ -1173,6 +1277,8 @@ namespace CazStudy
             this.Q255.Name = "Q255";
             this.Q255.Size = new System.Drawing.Size(40, 20);
             this.Q255.TabIndex = 45;
+            this.Q255.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q255_KeyPress);
+            this.Q255.Leave += new System.EventHandler(this.Q255_Leave);
             // 
             // label51
             // 
@@ -1189,6 +1295,8 @@ namespace CazStudy
             this.Q254.Name = "Q254";
             this.Q254.Size = new System.Drawing.Size(40, 20);
             this.Q254.TabIndex = 43;
+            this.Q254.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q254_KeyPress);
+            this.Q254.Leave += new System.EventHandler(this.Q254_Leave);
             // 
             // label52
             // 
@@ -1205,6 +1313,8 @@ namespace CazStudy
             this.Q253.Name = "Q253";
             this.Q253.Size = new System.Drawing.Size(40, 20);
             this.Q253.TabIndex = 41;
+            this.Q253.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q253_KeyPress);
+            this.Q253.Leave += new System.EventHandler(this.Q253_Leave);
             // 
             // label53
             // 
@@ -1221,6 +1331,8 @@ namespace CazStudy
             this.Q252.Name = "Q252";
             this.Q252.Size = new System.Drawing.Size(40, 20);
             this.Q252.TabIndex = 39;
+            this.Q252.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q252_KeyPress);
+            this.Q252.Leave += new System.EventHandler(this.Q252_Leave);
             // 
             // label54
             // 
@@ -1237,6 +1349,8 @@ namespace CazStudy
             this.Q251.Name = "Q251";
             this.Q251.Size = new System.Drawing.Size(40, 20);
             this.Q251.TabIndex = 37;
+            this.Q251.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q251_KeyPress);
+            this.Q251.Leave += new System.EventHandler(this.Q251_Leave);
             // 
             // label55
             // 
@@ -1273,6 +1387,8 @@ namespace CazStudy
             this.Q26.Name = "Q26";
             this.Q26.Size = new System.Drawing.Size(40, 20);
             this.Q26.TabIndex = 37;
+            this.Q26.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q26_KeyPress);
+            this.Q26.Leave += new System.EventHandler(this.Q26_Leave);
             // 
             // label48
             // 
@@ -1300,6 +1416,8 @@ namespace CazStudy
             this.Q3.Name = "Q3";
             this.Q3.Size = new System.Drawing.Size(40, 20);
             this.Q3.TabIndex = 37;
+            this.Q3.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q3_KeyPress);
+            this.Q3.Leave += new System.EventHandler(this.Q3_Leave);
             // 
             // label45
             // 
@@ -1309,38 +1427,6 @@ namespace CazStudy
             this.label45.Size = new System.Drawing.Size(190, 26);
             this.label45.TabIndex = 36;
             this.label45.Text = "কোভিড-১৯ ভ্যাকসিন উপযুক্ত আপনি \r\nবাদে পড়িবারে সবাই কি নিয়েছে?";
-            // 
-            // Q242
-            // 
-            this.Q242.Location = new System.Drawing.Point(171, 46);
-            this.Q242.Name = "Q242";
-            this.Q242.Size = new System.Drawing.Size(111, 20);
-            this.Q242.TabIndex = 43;
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(25, 49);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(88, 13);
-            this.label56.TabIndex = 42;
-            this.label56.Text = "আক্রান্তের তারিখ";
-            // 
-            // Q241
-            // 
-            this.Q241.Location = new System.Drawing.Point(242, 20);
-            this.Q241.Name = "Q241";
-            this.Q241.Size = new System.Drawing.Size(40, 20);
-            this.Q241.TabIndex = 41;
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(25, 23);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(211, 13);
-            this.label57.TabIndex = 40;
-            this.label57.Text = "কোভিড-১৯ রোগে আক্রান্ত হয়েছেন কিনা?";
             // 
             // groupBox8
             // 
@@ -1359,6 +1445,8 @@ namespace CazStudy
             this.Q4.Name = "Q4";
             this.Q4.Size = new System.Drawing.Size(40, 20);
             this.Q4.TabIndex = 37;
+            this.Q4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q4_KeyPress);
+            this.Q4.Leave += new System.EventHandler(this.Q4_Leave);
             // 
             // label49
             // 
@@ -1384,12 +1472,32 @@ namespace CazStudy
             this.groupBox13.TabStop = false;
             this.groupBox13.Text = "5. কোভিড-১৯ এ আক্রান্ত হবার পর আপনার কি নিন্মলিখিত সমস্যার উদ্ভব হয়েছে?";
             // 
+            // Q53
+            // 
+            this.Q53.Location = new System.Drawing.Point(232, 81);
+            this.Q53.Name = "Q53";
+            this.Q53.Size = new System.Drawing.Size(40, 20);
+            this.Q53.TabIndex = 45;
+            this.Q53.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q53_KeyPress);
+            this.Q53.Leave += new System.EventHandler(this.Q53_Leave);
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(15, 84);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(42, 13);
+            this.label60.TabIndex = 44;
+            this.label60.Text = "বিষন্নতা";
+            // 
             // Q52
             // 
             this.Q52.Location = new System.Drawing.Point(232, 55);
             this.Q52.Name = "Q52";
             this.Q52.Size = new System.Drawing.Size(40, 20);
             this.Q52.TabIndex = 43;
+            this.Q52.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q52_KeyPress);
+            this.Q52.Leave += new System.EventHandler(this.Q52_Leave);
             // 
             // label58
             // 
@@ -1406,6 +1514,8 @@ namespace CazStudy
             this.Q51.Name = "Q51";
             this.Q51.Size = new System.Drawing.Size(40, 20);
             this.Q51.TabIndex = 41;
+            this.Q51.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q51_KeyPress);
+            this.Q51.Leave += new System.EventHandler(this.Q51_Leave);
             // 
             // label59
             // 
@@ -1416,22 +1526,6 @@ namespace CazStudy
             this.label59.TabIndex = 40;
             this.label59.Text = "ভুলে যাওয়া";
             // 
-            // Q53
-            // 
-            this.Q53.Location = new System.Drawing.Point(232, 81);
-            this.Q53.Name = "Q53";
-            this.Q53.Size = new System.Drawing.Size(40, 20);
-            this.Q53.TabIndex = 45;
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(15, 84);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(42, 13);
-            this.label60.TabIndex = 44;
-            this.label60.Text = "বিষন্নতা";
-            // 
             // btnexit
             // 
             this.btnexit.Location = new System.Drawing.Point(817, 715);
@@ -1440,6 +1534,48 @@ namespace CazStudy
             this.btnexit.TabIndex = 45;
             this.btnexit.Text = "Exit";
             this.btnexit.UseVisualStyleBackColor = true;
+            this.btnexit.Click += new System.EventHandler(this.btnexit_Click);
+            // 
+            // Q212
+            // 
+            this.Q212.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Q212.Location = new System.Drawing.Point(715, 117);
+            this.Q212.Name = "Q212";
+            this.Q212.Size = new System.Drawing.Size(85, 21);
+            this.Q212.TabIndex = 47;
+            this.Q212.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q212_KeyPress);
+            this.Q212.Leave += new System.EventHandler(this.Q212_Leave);
+            // 
+            // label125
+            // 
+            this.label125.AutoSize = true;
+            this.label125.Location = new System.Drawing.Point(603, 121);
+            this.label125.Name = "label125";
+            this.label125.Size = new System.Drawing.Size(110, 13);
+            this.label125.TabIndex = 46;
+            this.label125.Text = "2.1 Vac Name Other :";
+            // 
+            // Q12
+            // 
+            this.Q12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Q12.Location = new System.Drawing.Point(336, 92);
+            this.Q12.Mask = "00/00/0000";
+            this.Q12.Name = "Q12";
+            this.Q12.Size = new System.Drawing.Size(88, 20);
+            this.Q12.TabIndex = 48;
+            this.Q12.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q12_KeyPress);
+            this.Q12.Leave += new System.EventHandler(this.Q12_Leave);
+            // 
+            // Q16
+            // 
+            this.Q16.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Q16.Location = new System.Drawing.Point(71, 116);
+            this.Q16.Mask = "00/00/0000";
+            this.Q16.Name = "Q16";
+            this.Q16.Size = new System.Drawing.Size(88, 20);
+            this.Q16.TabIndex = 49;
+            this.Q16.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Q16_KeyPress);
+            this.Q16.Leave += new System.EventHandler(this.Q16_Leave);
             // 
             // home
             // 
@@ -1447,6 +1583,10 @@ namespace CazStudy
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(904, 765);
+            this.Controls.Add(this.Q16);
+            this.Controls.Add(this.Q12);
+            this.Controls.Add(this.Q212);
+            this.Controls.Add(this.label125);
             this.Controls.Add(this.btnexit);
             this.Controls.Add(this.groupBox13);
             this.Controls.Add(this.groupBox8);
@@ -1456,11 +1596,10 @@ namespace CazStudy
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.Q21);
+            this.Controls.Add(this.Q211);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.Q17);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.Q16);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.Q14);
             this.Controls.Add(this.label8);
@@ -1469,14 +1608,13 @@ namespace CazStudy
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.save);
+            this.Controls.Add(this.btnsave);
             this.Controls.Add(this.txtcrfdate);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtinterviewer);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.Q15);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.Q12);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Q11);
             this.Controls.Add(this.visitnum);
@@ -1514,13 +1652,10 @@ namespace CazStudy
 
         }
 
-       
-
         #endregion
 
         private System.Windows.Forms.Label visitnum;
         private System.Windows.Forms.TextBox Q11;
-        private System.Windows.Forms.TextBox Q12;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox Q15;
         private System.Windows.Forms.Label label2;
@@ -1528,7 +1663,7 @@ namespace CazStudy
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtcrfdate;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button save;
+        private System.Windows.Forms.Button btnsave;
         private Panel panel1;
         private Label label5;
         private Panel panel2;
@@ -1538,11 +1673,10 @@ namespace CazStudy
         private Label label7;
         private TextBox Q14;
         private Label label8;
-        private TextBox Q16;
         private Label label9;
         private TextBox Q17;
         private Label label10;
-        private TextBox Q21;
+        private TextBox Q211;
         private Label label11;
         private Label label13;
         private GroupBox groupBox1;
@@ -1656,6 +1790,10 @@ namespace CazStudy
         private TextBox Q51;
         private Label label59;
         private Button btnexit;
+        private TextBox Q212;
+        private Label label125;
+        private MaskedTextBox Q12;
+        private MaskedTextBox Q16;
     }
 }
 
